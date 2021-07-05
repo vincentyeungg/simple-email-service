@@ -27,7 +27,6 @@ app.post('/api/send-email', (req, res) => {
             pass: process.env.GMAIL_PASSWORD
         },
         tls: {
-            // do not fail on invalid certs
             rejectUnauthorized: false
         },
     });
